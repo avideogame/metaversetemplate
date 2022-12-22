@@ -1039,7 +1039,10 @@ aModule.MyGame.SetPlayerLanguageInit = function(aParam)
 		end)
 		
 		if getSuccess then
-			aLanguage = ""..currentLanguage
+			if  currentLanguage == nil then
+			else
+				aLanguage = ""..currentLanguage
+			end
 		else
 		end
 		
